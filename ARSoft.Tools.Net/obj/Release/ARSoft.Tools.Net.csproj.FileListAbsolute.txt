@@ -1,0 +1,5 @@
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\bin\Release\LICENSE
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\bin\Release\NOTICE
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\bin\Release\ARSoft.Tools.Net.dll
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\ARSoft.Tools.Net\obj\Release\ARSoft.Tools.Net.dll
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\bin\Release\ARSoft.Tools.Net.xml

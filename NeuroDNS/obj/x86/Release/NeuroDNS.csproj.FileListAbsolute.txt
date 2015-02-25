@@ -1,0 +1,13 @@
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\NeuroDNS\bin\Release\LICENSE
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\NeuroDNS\bin\Release\NOTICE
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\NeuroDNS\bin\Release\NeuroDNS.exe
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\NeuroDNS\bin\Release\NeuroDNS.pdb
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\NeuroDNS\bin\Release\ARSoft.Tools.Net.dll
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\NeuroDNS\bin\Release\MetroFramework.dll
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\NeuroDNS\bin\Release\ARSoft.Tools.Net.xml
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\NeuroDNS\obj\x86\Release\NeuroDNS.csprojResolveAssemblyReference.cache
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\NeuroDNS\obj\x86\Release\NeuroDNS.Form1.resources
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\NeuroDNS\obj\x86\Release\NeuroDNS.Properties.Resources.resources
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\NeuroDNS\obj\x86\Release\NeuroDNS.csproj.GenerateResource.Cache
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\NeuroDNS\obj\x86\Release\NeuroDNS.exe
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\NeuroDNS\obj\x86\Release\NeuroDNS.pdb

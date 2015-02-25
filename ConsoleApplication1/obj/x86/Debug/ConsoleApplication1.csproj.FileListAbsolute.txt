@@ -1,0 +1,11 @@
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\ConsoleApplication1\bin\Debug\LICENSE
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\ConsoleApplication1\bin\Debug\NOTICE
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\ConsoleApplication1\bin\Debug\ARSoft.Tools.Net.dll
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\ConsoleApplication1\bin\Debug\ARSoft.Tools.Net.pdb
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\vipuhov\Desktop\Разработки\BlackDNS\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Виталий\Desktop\BlackDNS\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Виталий\Desktop\BlackDNS\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
