@@ -26,7 +26,8 @@ namespace ARSoft.Tools.Net.Dns
 	/// <summary>
 	///   Type of algorithm
 	/// </summary>
-	public enum TSigAlgorithm
+    [Serializable]
+    public enum TSigAlgorithm
 	{
 		/// <summary>
 		///   Unknown

@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc4408">RFC 4408</see>
 	///   </para>
 	/// </summary>
-	public class SpfRecord : DnsRecordBase, ITextRecord
+    [Serializable]
+    public class SpfRecord : DnsRecordBase, ITextRecord
 	{
 		/// <summary>
 		///   Text data of the record

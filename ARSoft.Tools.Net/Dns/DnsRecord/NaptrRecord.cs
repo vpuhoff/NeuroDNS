@@ -34,7 +34,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc3403">RFC 3403</see>
 	///   </para>
 	/// </summary>
-	public class NaptrRecord : DnsRecordBase
+    [Serializable]
+    public class NaptrRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Order of the record

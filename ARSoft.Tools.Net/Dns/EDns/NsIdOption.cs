@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc5001">RFC 5001</see>
 	///   </para>
 	/// </summary>
-	public class NsIdOption : EDnsOptionBase
+    [Serializable]
+    public class NsIdOption : EDnsOptionBase
 	{
 		/// <summary>
 		///   Binary data of the payload

@@ -31,7 +31,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc3123">RFC 3123</see>
 	///   </para>
 	/// </summary>
-	public class AplRecord : DnsRecordBase
+    [Serializable]
+    public class AplRecord : DnsRecordBase
 	{
 		internal enum Family : ushort
 		{

@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc6975">RFC 6975</see>
 	///   </para>
 	/// </summary>
-	public class DnssecAlgorithmUnderstoodOption : EDnsOptionBase
+    [Serializable]
+    public class DnssecAlgorithmUnderstoodOption : EDnsOptionBase
 	{
 		/// <summary>
 		///   List of Algorithms

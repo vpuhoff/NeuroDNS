@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc4255">RFC 4255</see>
 	///   </para>
 	/// </summary>
-	public class SshFpRecord : DnsRecordBase
+    [Serializable]
+    public class SshFpRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Algorithm of the fingerprint

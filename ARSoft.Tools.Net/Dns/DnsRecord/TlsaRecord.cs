@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc6698">RFC 6698</see>
 	///   </para>
 	/// </summary>
-	public class TlsaRecord : DnsRecordBase
+    [Serializable]
+    public class TlsaRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Certificate Usage

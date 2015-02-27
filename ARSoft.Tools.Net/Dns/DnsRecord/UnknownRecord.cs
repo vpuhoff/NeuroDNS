@@ -26,7 +26,8 @@ namespace ARSoft.Tools.Net.Dns
 	/// <summary>
 	///   Represent a dns record, which is not directly supported by this library
 	/// </summary>
-	public class UnknownRecord : DnsRecordBase
+    [Serializable]
+    public class UnknownRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Binary data of the RDATA section of the record

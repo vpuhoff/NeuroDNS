@@ -62,6 +62,28 @@ namespace NeuroDNS
             }
         }
 
+        [Serializable]
+        private class hashitem
+        {
+            public hashitem(string k, DnsMessage a)
+            {
+                key =k;
+                answer = a;
+                lastupdtime = DateTime.Now;
+                selected = 0;
+            }
+            public  string key { get; set; }
+            public DnsMessage answer { get; set; }
+
+            public DateTime lastupdtime { get; set; }
+
+            public int selected { get; set; }
+        }
+
+        private List<hashitem> hash = new List<hashitem>();
+        private bool frst = true;
+        private DnsQuestion qsample;
+        private TimeSpan tts;
         DnsMessageBase ProcessQuery(DnsMessageBase message, IPAddress clientAddress, ProtocolType protocol)
         {
             message.IsQuery = false;
@@ -74,52 +96,137 @@ namespace NeuroDNS
                 // send query to upstream server
                 DnsQuestion question = query.Questions[0];
                 Random rnd = new Random();
-                if (enb==null )
+            ret2: if (enb==null )
                 {
                     InitDNS();
+                    goto ret2;
                 }
-                
-                WriteToConsole(question.Name);
-                templ.Clear();
-                for (int i = 0; i < retcnt; i++)
-                {
-                    templ.Add(WeightedRandomization.Choose(enb));
-                }
+                else
+            {
+                //if (question.Name.Contains("xaapi"))
+                //{
+                //    message.ReturnCode = ReturnCode.ServerFailure;
+                //    return message;
+                //}
 
-                System.Threading.Tasks.Parallel.ForEach(templ, (site, state) =>
-                {
-                    WriteToConsole("Get Info from: " + site.IP);
-                    DnsClient cd = new DnsClient(IPAddress.Parse(site.IP ), 1000);
-                    DnsMessage answer = cd.Resolve(question.Name, question.RecordType, question.RecordClass);
-                    if (answer != null)
+                var tt = from q in hash where q.key  == question.Name select q;
+                    if (tt.Any())
                     {
-                        foreach (DnsRecordBase record in (answer.AnswerRecords))
+                        tts = DateTime.Now - tt.ToList()[0].lastupdtime;
+                        if (tts.TotalHours>12)
                         {
-                            lock (query)
-                            {
-                                query.AnswerRecords.Add(record);
-                            }
-                            site.Selects++;
-                            WriteToConsole(record.Name);
+                            tt.ToList()[0].answer = null;
                         }
-                        foreach (DnsRecordBase record in (answer.AdditionalRecords))
+                        //WriteToConsole(question.Name + " returned from hash");
+                        if (tt.ToList()[0].answer != null )
                         {
-                            lock (query)
-                            {
-                                query.AnswerRecords.Add(record);
-                            }
-                            site.Selects++;
-                            WriteToConsole(record.Name);
-                        }
-                        lock (query)
-                        {
-                            site.Weight--;
-                            query.ReturnCode = ReturnCode.NoError;
-                            state.Break();
+                            tt.ToList()[0].selected++;
+                            return tt.ToList()[0].answer;
                         }
                     }
-                });
+                    WriteToConsole(question.Name);
+                    templ.Clear();
+                    for (int i = 0; i < retcnt; i++)
+                    {
+                    ret3:  var q = WeightedRandomization.Choose(enb);
+                        if (!templ.Contains(q))
+                        {
+                            templ.Add(q);
+                        }
+                        else
+                        {
+                            goto ret3;
+                        }
+                    }
+                   
+                    System.Threading.Tasks.Parallel.ForEach(templ, (site, state) =>
+                    {
+                        WriteToConsole("Get Info for " +question.Name+" from: " + site.IP);
+                        DnsClient cd = new DnsClient(IPAddress.Parse(site.IP), 1000);
+                        DnsMessage answer = cd.Resolve(question.Name, question.RecordType, question.RecordClass);
+                        if (answer != null)
+                        {
+                            foreach (DnsRecordBase record in (answer.AnswerRecords))
+                            {
+                                lock (query)
+                                {
+                                    query.AnswerRecords.Add(record);
+                                }
+                                site.Selects++;
+                               
+                            }
+                            foreach (DnsRecordBase record in (answer.AdditionalRecords))
+                            {
+                                lock (query)
+                                {
+                                    query.AnswerRecords.Add(record);
+                                }
+                                site.Selects++;
+                            }
+                            lock (query)
+                            {
+                                //site.Weight--;
+                                query.ReturnCode = ReturnCode.NoError;
+                            }
+                                if (tt.Any())
+                                {
+                                    tt.ToList()[0].answer = query;
+                                    tt.ToList()[0].lastupdtime = DateTime.Now;
+                                    tt.ToList()[0].selected++;
+                                }
+                                else
+                                {
+                                    var t = new hashitem(question.Name, query);
+                                    lock (hash)
+                                    {
+                                        hash.Add(t);
+                                        if (frst)
+                                        {
+                                            qsample = question;
+                                            frst = false;
+                                        }
+                                    }
+                                }
+                               
+                                state.Break();
+                        }
+                    });
+                    System.Threading.Tasks.Parallel.ForEach(templ, (site, state) =>
+                    {
+                        WriteToConsole("Get Info from: " + site.IP);
+                        DnsClient cd = new DnsClient(IPAddress.Parse(site.IP), 1000);
+                        DnsMessage answer = cd.Resolve(question.Name, question.RecordType, question.RecordClass);
+                        if (answer != null)
+                        {
+                            foreach (DnsRecordBase record in (answer.AnswerRecords))
+                            {
+                                lock (query)
+                                {
+                                    query.AnswerRecords.Add(record);
+                                }
+                                site.Selects++;
+                                WriteToConsole(record.Name);
+                            }
+                            foreach (DnsRecordBase record in (answer.AdditionalRecords))
+                            {
+                                lock (query)
+                                {
+                                    query.AnswerRecords.Add(record);
+                                }
+                                site.Selects++;
+                                WriteToConsole(record.Name);
+                            }
+                            lock (query)
+                            {
+                                site.Weight--;
+                                query.ReturnCode = ReturnCode.NoError;
+                                state.Break();
+                            }
+                        }
+                    });   
+                }
                 // if got an answer, copy it to the message sent to the client
+
             }
             if (query.ReturnCode == ReturnCode.NoError)
             {
@@ -196,6 +303,7 @@ namespace NeuroDNS
             //сериализация
             bf.Serialize(fs, books );
             fs.Close();
+            SaveHash();
         }
         void LoadDNS()
         {
@@ -218,8 +326,43 @@ namespace NeuroDNS
                 SaveDNS();
                 ReBind();
             }
+            LoadHash();
         }
 
+        void SaveHash()
+        {
+            //создаем объект который будет сериализован
+            //откроем поток для записи в файл
+            var h= from m in hash where m.selected > 10 select m;
+            hash = h.ToList();
+            FileStream fs = new FileStream("Hash.db", FileMode.Create, FileAccess.Write, FileShare.ReadWrite);
+            BinaryFormatter bf = new BinaryFormatter();
+            //сериализация
+            bf.Serialize(fs, hash);
+            fs.Close();
+        }
+        void LoadHash()
+        {
+            if (File.Exists("Hash.db"))
+            {
+                try
+                {
+                    FileStream fs = new FileStream("Hash.db", FileMode.Open, FileAccess.Read, FileShare.Read);
+                    BinaryFormatter bf = new BinaryFormatter();
+                    hash = (List<hashitem>)bf.Deserialize(fs);
+                    fs.Close();
+                }
+                catch (Exception)
+                {
+                    hash = new List<hashitem>();
+                }
+            }
+            else
+            {
+                hash = new List<hashitem>();
+            }
+            ReBindDomains();
+        }
         void ReBind()
         {
             BindingSource bs = new BindingSource();
@@ -260,11 +403,11 @@ namespace NeuroDNS
                 item.IP = item.IP.Replace(" ", "");
                 
                 item.Selects = 0;
-                if (item.Weight==0)
+                if (item.Weight<=100)
                 {
                     item.Weight = 500 - getping(item.IP);
                     if (item.Weight<0)
-                    {
+                    { 
                         item.Weight = 0;
                     }
                 }
@@ -288,6 +431,16 @@ namespace NeuroDNS
                 {
                     rt.Add(reply.RoundtripTime);
                 }
+                else
+                {
+                    DateTime dt1 = DateTime.Now;
+                    DnsClient cd = new DnsClient(IPAddress.Parse(ip), timeout);
+                    DnsMessage answer = cd.Resolve(qsample.Name, qsample.RecordType, qsample.RecordClass);
+                    DateTime dt2= DateTime.Now;
+                    TimeSpan ts = dt2 - dt1;
+                    rt.Add((long)ts.TotalMilliseconds);
+                }
+              
                 Application.DoEvents();
                 Thread.Sleep(5);
             }
@@ -339,6 +492,34 @@ namespace NeuroDNS
         private void showToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Visible = true;
+        }
+
+        public enum Sort
+        {
+            Time
+        }
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            SaveHash();
+            ReBindDomains();
+        }
+
+        void ReBindDomains()
+        {
+            BindingSource bs = new BindingSource();
+            bs.DataSource = hash.OrderByDescending(x => x.selected).Take(30);
+            dataGridView2.AutoGenerateColumns = true;
+            dataGridView2.DataSource = bs;
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            SaveHash();
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            ReBindDomains();
         }
     }
 }

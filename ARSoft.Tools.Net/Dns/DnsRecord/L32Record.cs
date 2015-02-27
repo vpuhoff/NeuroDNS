@@ -31,7 +31,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc6742">RFC 6742</see>
 	///   </para>
 	/// </summary>
-	public class L32Record : DnsRecordBase
+    [Serializable]
+    public class L32Record : DnsRecordBase
 	{
 		/// <summary>
 		///   The preference

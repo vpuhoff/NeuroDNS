@@ -18,3 +18,10 @@ C:\Users\Виталий\Desktop\BlackDNS\bin\Debug\ARSoft.Tools.Net.pdb
 C:\Users\Виталий\Desktop\BlackDNS\ARSoft.Tools.Net\obj\Debug\ARSoft.Tools.Net.csprojResolveAssemblyReference.cache
 C:\Users\Виталий\Desktop\BlackDNS\ARSoft.Tools.Net\obj\Debug\ARSoft.Tools.Net.dll
 C:\Users\Виталий\Desktop\BlackDNS\ARSoft.Tools.Net\obj\Debug\ARSoft.Tools.Net.pdb
+D:\Разработки\NeuroDNS\NeuroDNS\bin\Debug\LICENSE
+D:\Разработки\NeuroDNS\NeuroDNS\bin\Debug\NOTICE
+D:\Разработки\NeuroDNS\NeuroDNS\bin\Debug\ARSoft.Tools.Net.dll
+D:\Разработки\NeuroDNS\NeuroDNS\bin\Debug\ARSoft.Tools.Net.pdb
+D:\Разработки\NeuroDNS\NeuroDNS\ARSoft.Tools.Net\obj\Debug\ARSoft.Tools.Net.csprojResolveAssemblyReference.cache
+D:\Разработки\NeuroDNS\NeuroDNS\ARSoft.Tools.Net\obj\Debug\ARSoft.Tools.Net.dll
+D:\Разработки\NeuroDNS\NeuroDNS\ARSoft.Tools.Net\obj\Debug\ARSoft.Tools.Net.pdb

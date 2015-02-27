@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc2230">RFC 2230</see>
 	///   </para>
 	/// </summary>
-	public class KxRecord : DnsRecordBase
+    [Serializable]
+    public class KxRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Preference of the record

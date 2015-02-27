@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc1035">RFC 1035</see>
 	///   </para>
 	/// </summary>
-	public class PtrRecord : DnsRecordBase
+    [Serializable]
+    public class PtrRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Domain name the address points to

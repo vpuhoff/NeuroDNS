@@ -32,7 +32,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc1348">RFC 1348</see>
 	///   </para>
 	/// </summary>
-	public class NsapRecord : DnsRecordBase
+    [Serializable]
+    public class NsapRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Binary encoded NSAP data

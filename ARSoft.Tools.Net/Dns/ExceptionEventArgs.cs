@@ -26,7 +26,8 @@ namespace ARSoft.Tools.Net.Dns
 	/// <summary>
 	///   Event arguments of <see cref="DnsServer.ExceptionThrown" /> event.
 	/// </summary>
-	public class ExceptionEventArgs : EventArgs
+    [Serializable]
+    public class ExceptionEventArgs : EventArgs
 	{
 		/// <summary>
 		///   Exception which was thrown originally

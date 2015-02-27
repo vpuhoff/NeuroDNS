@@ -26,7 +26,8 @@ namespace ARSoft.Tools.Net.Dns
 	/// <summary>
 	///   DNS record class
 	/// </summary>
-	public enum RecordClass : ushort
+    [Serializable]
+    public enum RecordClass : ushort
 	{
 		/// <summary>
 		///   Invalid record class

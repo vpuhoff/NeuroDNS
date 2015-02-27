@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc1035">RFC 1035</see>
 	///   </para>
 	/// </summary>
-	public class SoaRecord : DnsRecordBase
+    [Serializable]
+    public class SoaRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Hostname of the primary name server

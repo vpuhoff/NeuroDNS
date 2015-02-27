@@ -26,7 +26,8 @@ namespace ARSoft.Tools.Net.Dns
 	/// <summary>
 	///   Event arguments of <see cref="DnsServer.InvalidSignedMessageReceived" /> event.
 	/// </summary>
-	public class InvalidSignedMessageEventArgs : EventArgs
+    [Serializable]
+    public class InvalidSignedMessageEventArgs : EventArgs
 	{
 		/// <summary>
 		///   Original message, which the client provided

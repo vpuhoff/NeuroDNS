@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc1035">RFC 1035</see>
 	///   </para>
 	/// </summary>
-	public class MxRecord : DnsRecordBase
+    [Serializable]
+    public class MxRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Preference of the record

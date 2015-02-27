@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc1035">RFC 1035</see>
 	///   </para>
 	/// </summary>
-	public class NsRecord : DnsRecordBase
+    [Serializable]
+    public class NsRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Name of the authoritatitve nameserver for the zone

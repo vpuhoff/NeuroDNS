@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc1183">RFC 1183</see>
 	///   </para>
 	/// </summary>
-	public class IsdnRecord : DnsRecordBase
+    [Serializable]
+    public class IsdnRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   ISDN number

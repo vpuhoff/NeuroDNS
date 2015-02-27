@@ -31,7 +31,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc1712">RFC 1712</see>
 	///   </para>
 	/// </summary>
-	public class GPosRecord : DnsRecordBase
+    [Serializable]
+    public class GPosRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Longitude of the geographical position

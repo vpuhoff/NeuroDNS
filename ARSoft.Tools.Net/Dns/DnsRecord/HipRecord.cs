@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc5205">RFC 5205</see>
 	///   </para>
 	/// </summary>
-	public class HipRecord : DnsRecordBase
+	[Serializable]
+    public class HipRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Algorithm of the key

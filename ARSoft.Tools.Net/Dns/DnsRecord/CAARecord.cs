@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc6844">RFC 6844</see>
 	///   </para>
 	/// </summary>
-	public class CAARecord : DnsRecordBase
+    [Serializable]
+    public class CAARecord : DnsRecordBase
 	{
 		/// <summary>
 		///   The flags

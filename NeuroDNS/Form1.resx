@@ -120,10 +120,46 @@
   <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="toolStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>477, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="toolStripButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALRSURBVDhPdZPJT1NRFMafQ+LGiEFUTFzpH6CRuGFhggsD
+        0pZIZIhjXBhdOGxAhkpLKwKlqWI0caHBkECZoS20tFLTMJRgpYWSGgVlsFWgFErpZAuFz3tfi0LUk3y5
+        55137+/d79z7GBoXq952ZFZ0I7NcAzryytTgiLuQ/g/RegZ5nyXRKtjFNNLL9bB5AdvKBtKEKtBY3Yhq
+        jeRUm89UNCiEXVwtk2FkqB+3LmWC3+/CuRIFQuuAfNiNJssyWq0eVi0jHjSa3Ww9TCCcR11RAIkkTsU7
+        SEfDEA64kEoAPvLJdrKo66MXZ4taUdI4Cr7cgk7bCjrGPAhGAN4WAMOtNOD0w3qIjItIEyjgXQV6PvvQ
+        9zWAwekQjFMhDEwG0fslAMNEABGyg+zHvy08gfW9EXeuZrE7OC9UwkcAqa9NYAoUUeUT5f3RjgIl9grU
+        SCzTzVEGa6FmBijucSC9VIkAATAPFBiaX0ffD9rC7UFrZheQIOqO7oJaSObL8UA9BY5IBX8MYHGuYmfl
+        BBbdHjS0qVjRnNasC2uIF2rAPI1ZuHs9G/fbxwmgE/4wyDYV0M38xJEXk3A63ZiaXWZFc1rT20OILyWA
+        TQt108Dt+lFwxZ3wEcAuAmj6FMCJmm+oNc1hxu5iRXNaaxsPIiEGYLgSA84Ut+Dmmw/s8bCAQgVejfmQ
+        Iv+O5DoHkmodOFVrZ/MUuQM1Nj/pAQHQi2Q1GXHvRg6uvRxkAbQHu4uUqDZ7kdE2i6aRhVj71tFgmQeP
+        1J5bfDhIAdQCr1KPZmIhV6bHhXI1e3X38FWQmLy4onFhacmLwiIh7M4VtgeX1QuQDvtwKAZguIJmQ7ZE
+        i5wqLeiYS36oOOKvajiI/D4fEAnjmUyKcDiMSMiPvF4vpOYgEsWxYyRxnChpqxIKGnWHyQTqc3+pFnEi
+        HfYJySjQ4ACB08VHxd1eMve/cYxoG/RvMSd/AWSElOn6XU2BAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="toolStripButton3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIGSURBVDhPnVLNS5RhEJ/FoJOBm3VYKUKvhYdF8Cao6/pu
+        2qWyaNUUL3XyUIcOebDY3K9EkdJdjbQU333xgw6JHyDomqmZtK6ywn4cwo5B/QW/ZvZ912/L/MHwzMwz
+        v988Mzx0Elz30U/FRzDC/0djbwE2vw+grO0EInYvqRUeQrmbjQl29ts/EsaW8vAl1YPSv4koPhP65iux
+        mKjFUsqJz6l7WEw6EY7XIhAmaKsX2Heh0nuEiMJJ7VsRPsSuYDiajeGNbKhs4g9GziG4QghFz2Mm9uiw
+        QLU/69WLaQvU+Fm4ZgmN/YS6Pn0EEe5YZvGEGePRpnSOKVadaYC3jLdbhCc8q81F28UP6RmnpShttzpz
+        oG3cRAXvxcjtR/VLgoiUPKYAh1fZchU/vavivNwrbvrh8O+SHT5SpV54Egsy3SwSSKdQ9AZud5ozBdfY
+        rEz02N30S14qLxYR/XoPZMaRyH1oyRx08OLkA9k4V887eTBE8C4Q1OQZPJ++iLKnJs2g6ZDtTsaaEdo0
+        o/cr4c0aoT9CGFjXT7GxrUt4v1rIyzVJ98s604AIzMdbEVrLRYA7zcXvIJyowUKyBp9SfLIfnCsHj7Kz
+        j4OwynddTnRhdMWC9gnC3dcEZzelSTb+laUtNCV1evnRSIvI328IFmQ67bV8tn/CKstzeOi3EZ8K0q1Q
+        d48D0R//WxkrH5rD3QAAAABJRU5ErkJggg==
+</value>
+  </data>
   <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="toolStripButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -224,6 +260,9 @@
         AB/AAAA/4AAAf+AAAH/4AAH//AAD//8AD/8=
 </value>
   </data>
+  <metadata name="timer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>582, 17</value>
+  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA

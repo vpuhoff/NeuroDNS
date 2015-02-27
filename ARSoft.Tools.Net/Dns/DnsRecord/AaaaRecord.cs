@@ -31,7 +31,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc3596">RFC 3596</see>
 	///   </para>
 	/// </summary>
-	public class AaaaRecord : DnsRecordBase, IAddressRecord
+    [Serializable]
+    public class AaaaRecord : DnsRecordBase, IAddressRecord
 	{
 		/// <summary>
 		///   IP address of the host

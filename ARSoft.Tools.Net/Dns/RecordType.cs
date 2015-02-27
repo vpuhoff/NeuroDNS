@@ -26,7 +26,8 @@ namespace ARSoft.Tools.Net.Dns
 	/// <summary>
 	///   Type of record
 	/// </summary>
-	public enum RecordType : ushort
+    [Serializable]
+    public enum RecordType : ushort
 	{
 		/// <summary>
 		///   Invalid record type

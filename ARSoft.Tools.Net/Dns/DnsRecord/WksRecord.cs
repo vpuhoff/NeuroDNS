@@ -32,7 +32,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc1035">RFC 1035</see>
 	///   </para>
 	/// </summary>
-	public class WksRecord : DnsRecordBase
+    [Serializable]
+    public class WksRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   IP address of the host

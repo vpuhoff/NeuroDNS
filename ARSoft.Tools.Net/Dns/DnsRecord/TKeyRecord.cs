@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc2930">RFC 2930</see>
 	///   </para>
 	/// </summary>
-	public class TKeyRecord : DnsRecordBase
+    [Serializable]
+    public class TKeyRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Mode of transaction

@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc2163">RFC 2163</see>
 	///   </para>
 	/// </summary>
-	public class PxRecord : DnsRecordBase
+    [Serializable]
+    public class PxRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Preference of the record

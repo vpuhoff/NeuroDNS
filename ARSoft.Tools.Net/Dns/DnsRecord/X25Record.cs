@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc1183">RFC 1183</see>
 	///   </para>
 	/// </summary>
-	public class X25Record : DnsRecordBase
+    [Serializable]
+    public class X25Record : DnsRecordBase
 	{
 		/// <summary>
 		///   PSDN (Public Switched Data Network) address

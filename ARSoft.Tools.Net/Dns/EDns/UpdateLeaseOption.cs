@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://files.dns-sd.org/draft-sekar-dns-ul.txt">draft-sekar-dns-ul</see>
 	///   </para>
 	/// </summary>
-	public class UpdateLeaseOption : EDnsOptionBase
+    [Serializable]
+    public class UpdateLeaseOption : EDnsOptionBase
 	{
 		/// <summary>
 		///   Desired lease (request) or granted lease (response)

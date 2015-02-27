@@ -31,7 +31,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc1876">RFC 1876</see>
 	///   </para>
 	/// </summary>
-	public class LocRecord : DnsRecordBase
+    [Serializable]
+    public class LocRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Represents a geopgraphical degree

@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc1183">RFC 1183</see>
 	///   </para>
 	/// </summary>
-	public class RtRecord : DnsRecordBase
+    [Serializable]
+    public class RtRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Preference of the record

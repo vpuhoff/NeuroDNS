@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc1183">RFC 1183</see>
 	///   </para>
 	/// </summary>
-	public class RpRecord : DnsRecordBase
+    [Serializable]
+    public class RpRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Mail address of responsable person, the @ should be replaced by a dot

@@ -32,7 +32,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc5864">RFC 5864</see>
 	///   </para>
 	/// </summary>
-	public class AfsdbRecord : DnsRecordBase
+    [Serializable]
+    public class AfsdbRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   AFS database subtype

@@ -31,7 +31,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc4025">RFC 4025</see>
 	///   </para>
 	/// </summary>
-	public class IpSecKeyRecord : DnsRecordBase
+    [Serializable]
+    public class IpSecKeyRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Algorithm of key

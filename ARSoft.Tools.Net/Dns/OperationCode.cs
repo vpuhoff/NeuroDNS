@@ -26,7 +26,8 @@ namespace ARSoft.Tools.Net.Dns
 	/// <summary>
 	///   Operation code of a dns query
 	/// </summary>
-	public enum OperationCode : ushort
+    [Serializable]
+    public enum OperationCode : ushort
 	{
 		/// <summary>
 		///   <para>Normal query</para>

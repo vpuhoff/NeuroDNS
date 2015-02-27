@@ -31,7 +31,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc1035">RFC 1035</see>
 	///   </para>
 	/// </summary>
-	public class ARecord : DnsRecordBase, IAddressRecord
+    [Serializable]
+    public class ARecord : DnsRecordBase, IAddressRecord
 	{
 		/// <summary>
 		///   IP address of the host

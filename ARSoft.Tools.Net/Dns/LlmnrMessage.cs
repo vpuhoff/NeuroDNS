@@ -26,7 +26,8 @@ namespace ARSoft.Tools.Net.Dns
 	/// <summary>
 	///   Message returned as result to a LLMNR query
 	/// </summary>
-	public class LlmnrMessage : DnsMessageBase
+    [Serializable]
+    public class LlmnrMessage : DnsMessageBase
 	{
 		/// <summary>
 		///   Parses a the contents of a byte array as LlmnrMessage

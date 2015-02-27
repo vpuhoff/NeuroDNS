@@ -32,7 +32,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/draft-vandergaast-edns-client-subnet-02">draft-vandergaast-edns-client-subnet</see>
 	///   </para>
 	/// </summary>
-	public class ClientSubnetOption : EDnsOptionBase
+    [Serializable]
+    public class ClientSubnetOption : EDnsOptionBase
 	{
 		/// <summary>
 		///   The address family

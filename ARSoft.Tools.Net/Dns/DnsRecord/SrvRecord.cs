@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc2782">RFC 2782</see>
 	///   </para>
 	/// </summary>
-	public class SrvRecord : DnsRecordBase
+    [Serializable]
+    public class SrvRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Priority of the record

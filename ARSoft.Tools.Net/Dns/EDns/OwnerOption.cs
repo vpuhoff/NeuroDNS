@@ -31,7 +31,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://files.dns-sd.org/draft-sekar-dns-llq.txt">draft-cheshire-edns0-owner-option</see>
 	///   </para>
 	/// </summary>
-	public class OwnerOption : EDnsOptionBase
+    [Serializable]
+    public class OwnerOption : EDnsOptionBase
 	{
 		/// <summary>
 		///   The version

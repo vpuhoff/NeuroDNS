@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc6672">RFC 6672</see>
 	///   </para>
 	/// </summary>
-	public class DNameRecord : DnsRecordBase
+    [Serializable]
+    public class DNameRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Target of the redirection

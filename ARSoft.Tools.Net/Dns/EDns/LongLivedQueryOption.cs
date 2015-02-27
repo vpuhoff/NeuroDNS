@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://files.dns-sd.org/draft-sekar-dns-llq.txt">draft-sekar-dns-llq</see>
 	///   </para>
 	/// </summary>
-	public class LongLivedQueryOption : EDnsOptionBase
+    [Serializable]
+    public class LongLivedQueryOption : EDnsOptionBase
 	{
 		/// <summary>
 		///   Long lived query operation codes

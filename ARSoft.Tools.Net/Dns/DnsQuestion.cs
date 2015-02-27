@@ -26,7 +26,8 @@ namespace ARSoft.Tools.Net.Dns
 	/// <summary>
 	///   A single entry of the Question section of a dns query
 	/// </summary>
-	public class DnsQuestion : DnsMessageEntryBase
+    [Serializable]
+    public class DnsQuestion : DnsMessageEntryBase
 	{
 		/// <summary>
 		///   Creates a new instance of the DnsQuestion class

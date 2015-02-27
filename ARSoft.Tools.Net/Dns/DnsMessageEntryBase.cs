@@ -26,7 +26,8 @@ namespace ARSoft.Tools.Net.Dns
 	/// <summary>
 	///   Base class for a dns name identity
 	/// </summary>
-	public abstract class DnsMessageEntryBase
+    [Serializable]
+    public abstract class DnsMessageEntryBase
 	{
 		/// <summary>
 		///   Domain name

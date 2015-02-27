@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc7043">RFC 7043</see>
 	///   </para>
 	/// </summary>
-	public class Eui64Record : DnsRecordBase
+    [Serializable]
+    public class Eui64Record : DnsRecordBase
 	{
 		/// <summary>
 		///   IP address of the host

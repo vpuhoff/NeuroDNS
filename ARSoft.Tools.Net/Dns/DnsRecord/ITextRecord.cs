@@ -23,7 +23,7 @@ using System.Text;
 
 namespace ARSoft.Tools.Net.Dns
 {
-	internal interface ITextRecord
+    internal interface ITextRecord
 	{
 		string TextData { get; }
 	}

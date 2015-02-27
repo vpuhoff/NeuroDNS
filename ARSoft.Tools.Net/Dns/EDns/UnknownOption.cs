@@ -26,7 +26,8 @@ namespace ARSoft.Tools.Net.Dns
 	/// <summary>
 	///   Unknown EDNS option
 	/// </summary>
-	public class UnknownOption : EDnsOptionBase
+    [Serializable]
+    public class UnknownOption : EDnsOptionBase
 	{
 		/// <summary>
 		///   Binary data of the option

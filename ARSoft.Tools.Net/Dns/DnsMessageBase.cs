@@ -28,7 +28,8 @@ namespace ARSoft.Tools.Net.Dns
 	/// <summary>
 	///   Base class for a dns answer
 	/// </summary>
-	public abstract class DnsMessageBase
+    [Serializable]
+    public abstract class DnsMessageBase
 	{
 		protected ushort Flags;
 

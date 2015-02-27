@@ -26,7 +26,8 @@ namespace ARSoft.Tools.Net.Dns
 	/// <summary>
 	///   Result of a dns request
 	/// </summary>
-	public enum ReturnCode : ushort
+    [Serializable]
+    public enum ReturnCode : ushort
 	{
 		/// <summary>
 		///   <para>No error</para>

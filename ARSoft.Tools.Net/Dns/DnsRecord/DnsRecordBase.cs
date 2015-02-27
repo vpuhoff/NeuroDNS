@@ -26,7 +26,8 @@ namespace ARSoft.Tools.Net.Dns
 	/// <summary>
 	///   Base class representing a dns record
 	/// </summary>
-	public abstract class DnsRecordBase : DnsMessageEntryBase
+    [Serializable]
+    public abstract class DnsRecordBase : DnsMessageEntryBase
 	{
 		internal int StartPosition { get; set; }
 		internal ushort RecordDataLength { get; set; }

@@ -26,7 +26,8 @@ namespace ARSoft.Tools.Net.Dns
 	/// <summary>
 	///   ENDS Option types
 	/// </summary>
-	public enum EDnsOptionType : ushort
+    [Serializable]
+    public enum EDnsOptionType : ushort
 	{
 		/// <summary>
 		///   <para>Update Lease</para>

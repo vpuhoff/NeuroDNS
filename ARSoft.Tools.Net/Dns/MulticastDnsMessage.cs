@@ -26,7 +26,8 @@ namespace ARSoft.Tools.Net.Dns
 	/// <summary>
 	///   Message returned as result to a dns query
 	/// </summary>
-	public class MulticastDnsMessage : DnsMessageBase
+    [Serializable]
+    public class MulticastDnsMessage : DnsMessageBase
 	{
 		/// <summary>
 		///   Parses a the contents of a byte array as MulticastDnsMessage

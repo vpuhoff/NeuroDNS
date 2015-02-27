@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc2845">RFC 2845</see>
 	///   </para>
 	/// </summary>
-	public class TSigRecord : DnsRecordBase
+    [Serializable]
+    public class TSigRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Algorithm of the key

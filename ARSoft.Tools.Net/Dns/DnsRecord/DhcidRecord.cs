@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc4701">RFC 4701</see>
 	///   </para>
 	/// </summary>
-	public class DhcidRecord : DnsRecordBase
+    [Serializable]
+    public class DhcidRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Record data

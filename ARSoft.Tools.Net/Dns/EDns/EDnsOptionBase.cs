@@ -26,7 +26,8 @@ namespace ARSoft.Tools.Net.Dns
 	/// <summary>
 	///   Base class of EDNS options
 	/// </summary>
-	public abstract class EDnsOptionBase
+    [Serializable]
+    public abstract class EDnsOptionBase
 	{
 		/// <summary>
 		///   Type of the option

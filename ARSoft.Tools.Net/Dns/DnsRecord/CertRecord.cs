@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc4398">RFC 4398</see>
 	///   </para>
 	/// </summary>
-	public class CertRecord : DnsRecordBase
+    [Serializable]
+    public class CertRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Type of cert

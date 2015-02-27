@@ -36,3 +36,15 @@ C:\Users\Виталий\Desktop\BlackDNS\NeuroDNS\bin\Debug\NeuroDNS.exe
 C:\Users\Виталий\Desktop\BlackDNS\NeuroDNS\bin\Debug\NeuroDNS.pdb
 C:\Users\Виталий\Desktop\BlackDNS\NeuroDNS\bin\Debug\ARSoft.Tools.Net.dll
 C:\Users\Виталий\Desktop\BlackDNS\NeuroDNS\bin\Debug\ARSoft.Tools.Net.pdb
+D:\Разработки\NeuroDNS\NeuroDNS\NeuroDNS\obj\x86\Debug\NeuroDNS.exe
+D:\Разработки\NeuroDNS\NeuroDNS\NeuroDNS\obj\x86\Debug\NeuroDNS.pdb
+D:\Разработки\NeuroDNS\NeuroDNS\NeuroDNS\bin\Debug\LICENSE
+D:\Разработки\NeuroDNS\NeuroDNS\NeuroDNS\bin\Debug\NOTICE
+D:\Разработки\NeuroDNS\NeuroDNS\NeuroDNS\bin\Debug\NeuroDNS.exe
+D:\Разработки\NeuroDNS\NeuroDNS\NeuroDNS\bin\Debug\ARSoft.Tools.Net.dll
+D:\Разработки\NeuroDNS\NeuroDNS\NeuroDNS\bin\Debug\ARSoft.Tools.Net.pdb
+D:\Разработки\NeuroDNS\NeuroDNS\NeuroDNS\obj\x86\Debug\NeuroDNS.csprojResolveAssemblyReference.cache
+D:\Разработки\NeuroDNS\NeuroDNS\NeuroDNS\obj\x86\Debug\NeuroDNS.Form1.resources
+D:\Разработки\NeuroDNS\NeuroDNS\NeuroDNS\obj\x86\Debug\NeuroDNS.Properties.Resources.resources
+D:\Разработки\NeuroDNS\NeuroDNS\NeuroDNS\obj\x86\Debug\NeuroDNS.csproj.GenerateResource.Cache
+D:\Разработки\NeuroDNS\NeuroDNS\NeuroDNS\bin\Debug\NeuroDNS.pdb

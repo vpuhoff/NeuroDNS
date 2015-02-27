@@ -30,7 +30,8 @@ namespace ARSoft.Tools.Net.Dns
 	///     <see cref="!:http://tools.ietf.org/html/rfc2671">RFC 2671</see>
 	///   </para>
 	/// </summary>
-	public class OptRecord : DnsRecordBase
+    [Serializable]
+    public class OptRecord : DnsRecordBase
 	{
 		/// <summary>
 		///   Gets or set the sender's UDP payload size
